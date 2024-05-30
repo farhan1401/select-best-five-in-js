@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Best Five</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#151515]">
+    <header class="bg-black">
+      <section>
+        <div class="text-center">
+          <h1 class="text-8xl font-bold pt-28 text-[#FF5E19]">
+            Select Your Best Five
+          </h1>
+          <p class="text-white text-xl pb-28 mt-7">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit <br />
+            officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt <br />
+            nostrud amet.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main class="flex justify-between mt-12 container mx-auto">
+      <section>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="w-[264px] h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/pessi.png" alt="" />
+            <h2 id="messi-name" class="text-2xl font-medium text-white my-4">
+              Leonel Messi
+            </h2>
+            <button
+              id="messi-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+          <div class="w-[264px] h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/neymar.png" alt="" />
+            <h2 id="neymar-name" class="text-2xl font-medium text-white my-4">
+              Neymar Jr
+            </h2>
+            <button
+              id="neymar-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+          <div class="w-[264px] h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/mbappe.png" alt="" />
+            <h2 id="mbappe-name" class="text-2xl font-medium text-white my-4">
+              Mbappe
+            </h2>
+            <button
+              id="mbappe-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+          <div class="ol h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/renato.png" alt="" />
+            <h2 id="vitor-name" class="text-2xl font-medium text-white my-4">
+              Vítor Machado
+            </h2>
+            <button
+              id="vitor-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+          <div class="w-[264px] h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/ramos.png" alt="" />
+            <h2 id="ramos-name" class="text-2xl font-medium text-white my-4">
+              Sergio Ramos
+            </h2>
+            <button
+              id="ramos-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+          <div class="w-[264px] h-[350px] bg-[#0D0D0D] text-center border-2">
+            <img src="images/renato.png" alt="" />
+            <h2 id="reneto-name" class="text-2xl font-medium text-white my-4">
+              Renato Sanches
+            </h2>
+            <button
+              id="reneto-btn"
+              class="bg-sky-700 text-2xl text-white px-16 py-2"
+            >
+              select
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section >
+        <!-- player name calculate -->
+        <div
+          class="w-[264px] h-[350px] bg-[#0D0D0D] text-white text-center truncate mb-4"
+        >
+          <h1 class="text-4xl font-medium pt-4 mb-6">Selected - V</h1>
+          <ol id="player-list"></ol>
+        </div>
+        <!-- per player value calaculate -->
+        <div class="w-[264px] h-auto bg-[#0D0D0D]">
+          <h1 class="text-4xl font-medium pt-4 text-center text-white">
+            Budget
+          </h1>
+          <div class="pt-4 text-center">
+            <div>
+              <span class="text-white text-xl">Per Player</span>
+              <input id="per-player"
+                class="mt-2 mb-4 bg-inherit border-2 text-white"
+                type="text"
+              />
+              <button
+                id="calculate-btn"
+                class="bg-sky-700 text-2xl text-white px-16 py-2 mb-2"
+              >
+                Calculate
+              </button>
+            </div>
+            <span id="player-expense" class="text-white text-xl text-center">Player Expenses</span>
+          </div>
+<!-- cotach manager -->
+          <div class="mt-6 text-center">
+            <div >
+              <span id="manager" class="text-white text-xl">Manager</span>
+              <input id="manager-field"
+                class="mt-2 mb-4 bg-inherit border-2 text-white"
+                type="text"
+              />
+            </div>
+            <div>
+                <span id="cotach" class="text-white text-xl">Coatch</span>
+                <br>
+              <input id="coatch-field"
+                class="mt-2 mb-4 bg-inherit border-2 text-white"
+                type="text"
+              />
+                 <button
+                id="calculate-total-btn"
+                class="bg-sky-700 text-2xl text-white px-16 py-2 mb-4"
+              > 
+                Calculate total
+              </button>
+            </div>
+            </div>
+              <span id="total" class="text-xl font-medium text-white pb-20">Total</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
